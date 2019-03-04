@@ -13,29 +13,29 @@ class App extends Component {
   }
 
   onClickButton() {
-    
+
   }
 
   render() { 
     return (
       <div className="container">
       <CalculatorDisplay display={this.state.calcDisp}/>
-      <ActionButton styling="button" text="clear" />
-      <NumberButton styling="button" type="operators" text="&#xf7;" />
-      <NumberButton styling="button" weight="bold" text="7" />
-      <NumberButton styling="button" weight="bold" text="8" />
-      <NumberButton styling="button" weight="bold" text="9" />
-      <NumberButton styling="button" type="operators" text="&#xd7;" />
-      <NumberButton styling="button" weight="bold" text="4" />
-      <NumberButton styling="button" weight="bold" text="5" />
-      <NumberButton styling="button" weight="bold" text="6" />
-      <NumberButton styling="button" type="operators" text="&#x2212;" />
-      <NumberButton styling="button" weight="bold" text="1" />
-      <NumberButton styling="button" weight="bold" text="2" />
-      <NumberButton styling="button" weight="bold" text="3" />
-      <NumberButton styling="button" type="operators" text="&#x2b;" />
-      <ActionButton styling="button" weight="bold" text="0" />
-      <NumberButton styling="button" type="operators" text="&#x3d;" />
+      <ActionButton styling="button-action" text="clear" onClick="" />
+      <NumberButton styling="button-number" type="operators" text="&#xf7;" onClick="" />
+      <NumberButton styling="button-number" weight="bold" text="7" onClick="" />
+      <NumberButton styling="button-number" weight="bold" text="8" onClick=""/>
+      <NumberButton styling="button-number" weight="bold" text="9" />
+      <NumberButton styling="button-number" type="operators" text="&#xd7;" />
+      <NumberButton styling="button-number" weight="bold" text="4" />
+      <NumberButton styling="button-number" weight="bold" text="5" />
+      <NumberButton styling="button-number" weight="bold" text="6" />
+      <NumberButton styling="button-number" type="operators" text="&#x2212;" />
+      <NumberButton styling="button-number" weight="bold" text="1" />
+      <NumberButton styling="button-number" weight="bold" text="2" />
+      <NumberButton styling="button-number" weight="bold" text="3" />
+      <NumberButton styling="button-number" type="operators" text="&#x2b;" />
+      <ActionButton styling="button-action" weight="bold" text="0" />
+      <NumberButton styling="button-number" type="operators" text="&#x3d;" />
     </div>
     );
   }
