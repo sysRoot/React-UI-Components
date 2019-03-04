@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "immutability-helper": "^3.0.0",
+    "mathjs": "^5.6.0",
     "normalize.css": "^8.0.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",

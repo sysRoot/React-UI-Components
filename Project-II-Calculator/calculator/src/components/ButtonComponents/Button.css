@@ -1,4 +1,4 @@
-.button {
+.button-action {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,19 +8,25 @@
   height: 94.399px;
   border-top: 2px solid grey;
   border-left: 2px solid grey;
-}
-
-.operators {
-  background: #A0001e;
-  color: white;
-}
-
-.action {
   width: 75%;
 }
 
-.number {
+.button-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  font-size: 2.75rem;
+  padding: 12.5px;
+  height: 94.399px;
+  border-top: 2px solid grey;
+  border-left: 2px solid grey;
   width: 25%;
+}
+
+.operators {
+  background: rgb(165, 82, 98);
+  color: white;
 }
 
 .bold {
