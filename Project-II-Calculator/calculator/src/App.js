@@ -1,13 +1,25 @@
-import React from "react";
+import React, {Component} from "react";
 import "./App.css";
 import CalculatorDisplay from "./components/DisplayComponents/CalculatorDisplay";
 import ActionButton from "./components/ButtonComponents/ActionButton";
 import NumberButton from "./components/ButtonComponents/NumberButton";
 
-const App = () => {
-  return (
-    <div className="container">
-      <CalculatorDisplay />
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      calcDisp: 0,
+    }
+  }
+
+  onClickButton() {
+    
+  }
+
+  render() { 
+    return (
+      <div className="container">
+      <CalculatorDisplay display={this.state.calcDisp}/>
       <ActionButton styling="button" text="clear" />
       <NumberButton styling="button" type="operators" text="&#xf7;" />
       <NumberButton styling="button" weight="bold" text="7" />
@@ -25,7 +37,8 @@ const App = () => {
       <ActionButton styling="button" weight="bold" text="0" />
       <NumberButton styling="button" type="operators" text="&#x3d;" />
     </div>
-  );
-};
-
+    );
+  }
+}
+ 
 export default App;
